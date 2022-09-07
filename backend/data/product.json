@@ -1,0 +1,122 @@
+[
+  {
+    "name": "4TECH Mouse",
+    "price": 110.00,
+    "description": "This mouse is widely used for office and at school. Most user reviewed as their primary mouse being used everyday.",
+    "ratings": 4,
+    "images": [{
+        "public_id": "1234",
+        "url": "https://www.a4tech.com/alanUpload/colorImg/img/202005/1402232865101555.jpg"
+    }],
+    "category": "Mouse",
+    "seller": "Joyo",
+    "stock": "50",
+    "numOfReviews": 32,
+    "reviews": []
+},
+  {
+    "name": "Cherry Wired USB Keyboard",
+    "price": 1563.77,
+    "description": "HERRY KC 1000 is rock-solid CHERRY technology, modern, flat design with gentle, quiet and durable wear-resistant keys. Universal, reliable and optimised for professional use.",
+    "ratings": 5,
+    "images": [{
+        "public_id": "1234",
+        "url": "https://www.cherry-world.com/media/catalog/product/cache/a64008e40033bd213af0a10e302bcfe9/g/8/g80-1800_keyboard_cherry_g80-1800_light-grey_aufs.jpg"
+    }],
+    "category": "Keyboards",
+    "seller": "RS Computers",
+    "stock": "50",
+    "numOfReviews": 32,
+    "reviews": []
+},
+  {
+    "name": "24inch SF350 LED Monitor",
+    "price": 2400.00,
+    "description": "The world's first SF350 LED Monitor. Featuring infinite contrast ratio and VESA DisplayHDR TrueBlack 400 for remarkably vivid colors and visuals.",
+    "ratings": 4.5,
+    "images": [{
+        "public_id": "1234",
+        "url": "https://images.samsung.com/is/image/samsung/au-led-sf350-ls24f350fhexxy-001-front-black?$650_519_PNG$"
+    }],
+    "category": "Monitor",
+    "seller": "Samsung",
+    "stock": "30",
+    "numOfReviews": 32,
+    "reviews": []
+},
+  {
+    "name": "AMD Ryzen 3 2200G Processor",
+    "price": 9380.00,
+    "description": "MD YD2200C5FBBOX Ryzen 3 2200G Processor with Radeon Vega 8 Graphics. supported technologies AMD SenseMI technology, AMD VR ready processors.",
+    "ratings": 4.8,
+    "images": [{
+        "public_id": "1234",
+        "url": "https://m.media-amazon.com/images/I/51iEPZZbnEL._AC_SY450_.jpg"
+    }],
+    "category": "Processor",
+    "seller": "Amazon",
+    "stock": "20",
+    "numOfReviews": 32,
+    "reviews": []
+},
+  {
+    "name": "SanDisk Plus 1TB Internal SSD",
+    "price": 110.00,
+    "description": "This SSD is widely used for office and at school. With huge storage capacity and also much faster than your ordinary HDD storage.",
+    "ratings": 4,
+    "images": [{
+        "public_id": "1234",
+        "url": "https://m.media-amazon.com/images/I/71J4Q8zM72L._AC_SS450_.jpg"
+    }],
+    "category": "Mouse",
+    "seller": "Amazon",
+    "stock": "50",
+    "numOfReviews": 32,
+    "reviews": []
+},
+  {
+    "name": "Deepcool Wave Custom Gaming Cpu Casing",
+    "price": 999.99,
+    "description": "Game Rgb Expensive Desktop Cover Deepcool Wave Custom Gaming Cpu Casing Pc Computer Case.",
+    "ratings": 4.5,
+    "images": [{
+        "public_id": "1234",
+        "url": "http://sc04.alicdn.com/kf/H91bd291d750542dcaad35851ddabe4cec.jpg"
+    }],
+    "category": "Casing",
+    "seller": "Alibaba",
+    "stock": "20",
+    "numOfReviews": 32,
+    "reviews": []
+},
+  {
+    "name": "GeForce GTX 1080 Ti DUKE 11G OC",
+    "price": 5500.99,
+    "description": "The leading brand in high-end gaming & professional creation.",
+    "ratings": 4.8,
+    "images": [{
+        "public_id": "1234",
+        "url": "https://asset.msi.com/resize/image/global/product/product_8_20180417113919_5ad56c6786ed2.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"
+    }],
+    "category": "Graphics",
+    "seller": "MSI",
+    "stock": "30",
+    "numOfReviews": 32,
+    "reviews": []
+},
+  {
+    "name": "Kingston HyperX Fury DDR4 8Gb 2666MHz",
+    "price": 1420.25,
+    "description": "ddr4 8gb 2666mhz - HX426C16FB2/8 8GB 1G x 64-Bit DDR4-2666 CL16 288-Pin DIMM ddr4 8gb 3200mhz - HX432C15PB3/8 8gb 1G x 64-Bit DDR4-3200 CL15 288-pin DIMM",
+    "ratings": 4.2,
+    "images": [{
+        "public_id": "1234",
+        "url": "https://ph-test-11.slatic.net/p/091065d192a325f27b1505f153867a80.jpg"
+    }],
+    "category": "Memory",
+    "seller": "Kingston",
+    "stock": "50",
+    "numOfReviews": 32,
+    "reviews": []
+}
+]
