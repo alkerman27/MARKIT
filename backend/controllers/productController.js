@@ -1,60 +1,59 @@
 const Product = require("../models/productModel");
+const ErrorHandler = require("../utilities/errorHandler");
+const asyncErrors = require("../middlewares/asyncErrors");
 
 //create new Product => api/v1/admin/product/new
-
-const newProduct = async (req, res) => {
+const newProduct = asyncErrors(async (req, res, next) => {
   const product = await Product.create(req.body);
 
   res.status(200).json(product);
-};
+});
 
 //get all Products => api/v1/products
-
-const getProducts = async (req, res) => {
+const getProducts = asyncErrors(async (req, res, next) => {
   const products = await Product.find({});
 
   res.status(200).json(products);
-};
+});
 
 //get single product => api/v1/product/:id
-
-const getOneProduct = async (req, res) => {
+const getOneProduct = asyncErrors(async (req, res, next) => {
   const { id } = req.params;
 
   const product = await Product.findById(id);
 
   if (!product) {
-    return res.status(404).json({ message: "Product not found" });
+    return next(new ErrorHandler("Product not found", 404));
   }
 
   res.status(200).json(product);
-};
+});
 
 //update a single product => api/v1/admin/product/:id
-
-const updateProduct = async (req, res) => {
+const updateProduct = asyncErrors(async (req, res, next) => {
   const { id } = req.params;
 
   const product = await Product.findByIdAndUpdate(id, { ...req.body });
 
   if (!product) {
-    return res.status(404).json({ message: "Product not found" });
+    return next(new ErrorHandler("Product not found", 404));
   }
 
   res.status(200).json(product);
-};
+});
 
-const deleteProduct = async (req, res) => {
+//delete a product => api/v1/admin/product/:id
+const deleteProduct = asyncErrors(async (req, res, next) => {
   const { id } = req.params;
 
   const product = await Product.findByIdAndDelete(id);
 
   if (!product) {
-    res.status(404).json({ message: "Product not found" });
+    return next(new ErrorHandler("Product not found", 404));
   }
 
   res.status(200).json(product);
-};
+});
 
 module.exports = {
   getProducts,
