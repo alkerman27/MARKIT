@@ -12,11 +12,23 @@ const newProduct = asyncErrors(async (req, res, next) => {
 
 //get all Products => api/v1/products
 const getProducts = asyncErrors(async (req, res, next) => {
-  const apiFeatures = new APIFeatures(Product.find({}), req.query).search();
+  const resultPerPage = 4;
+
+  //use to count product in the frontend
+  const productCount = await Product.countDocuments();
+
+  const apiFeatures = new APIFeatures(Product, req.query)
+    .search()
+    .pagination(resultPerPage)
+    .filter();
 
   const products = await apiFeatures.query;
 
-  res.status(200).json(products);
+  res.status(200).json({
+    count: products.length,
+    productCount,
+    products,
+  });
 });
 
 //get single product => api/v1/product/:id
